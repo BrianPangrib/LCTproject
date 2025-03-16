@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet" href="{{ url_for('static', filename='subpage_refenitive.css') }}">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="website-tech">
+    		<div class="white-sheet">
+    		</div>
+    		<div class="gray-sheet">
+    		</div>
+    		<div class="white-sheet1">
+    		</div>
+    		<div class="gray-sheet1">
+    		</div>
+    		<div class="website-tech-child">
+    		</div>
+    		<div class="bg">
+    		</div>
+    		<div class="bank">BANK</div>
+    		<div class="lcs-rate-direct">LCS rate (Direct Rate)</div>
+    		<div class="source">Source</div>
+    		<div class="comply">Comply</div>
+    		<div class="cross-rate">Cross Rate</div>
+    		<div class="lct-indonesia-malaysia">LCT Indonesia-Malaysia</div>
+
+    		<div class="div">03/02/2025</div>
+            <script>
+				function updateTanggal() {
+					const tanggalElement = document.querySelector(".div");
+					const sekarang = new Date();
+			
+					// Format tanggal: DD/MM/YYYY
+					const hari = String(sekarang.getDate()).padStart(2, '0');
+					const bulan = String(sekarang.getMonth() + 1).padStart(2, '0'); // Bulan mulai dari 0
+					const tahun = sekarang.getFullYear();
+			
+					tanggalElement.textContent = `${hari}/${bulan}/${tahun}`;
+				}
+			
+				// Jalankan saat halaman pertama kali dibuka
+				document.addEventListener("DOMContentLoaded", updateTanggal);
+			
+				// Update setiap 1 detik (opsional)
+				setInterval(updateTanggal, 1000);
+			</script>
+
+    		<div class="white-sheet2">
+    		</div>
+    		<img class="bg-icon" alt="Background" src="{{ url_for('static', filename='aset/bg.png') }}">
+    		
+    		<a href="/home">
+				<img class="image-3-icon" alt="Image 3" src="{{ url_for('static', filename='aset/image 3.png') }}">
+			</a>
+    		
+    		<img class="bg-icon1" alt="Background" src="{{ url_for('static', filename='aset/bg.png') }}">
+    		
+    		<div class="mandiri">
+                <div class="yes">YES</div>
+                <div class="div1">0</div>
+                <div class="div2">0</div>
+                <div class="mandiri1">MANDIRI</div>
+                <div class="button-contained-accent">
+                    <a href="https://www.bankmandiri.co.id/kurs">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="bri">
+                <div class="yes1">YES</div>
+                <div class="div3">0</div>
+                <div class="div4">0</div>
+                <div class="cimb-niaga">BRI</div>
+                <div class="button-contained-accent">
+                    <a href="https://bri.co.id/kurs-detail">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="bca">
+                <div class="yes2">YES</div>
+                <div class="div5">0</div>
+                <div class="div6">0</div>
+                <div class="cimb-niaga">BCA</div>
+                <div class="button-contained-accent">
+                    <a href="https://www.bca.co.id/id/informasi/kurs">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="bni">
+                <div class="yes3">YES</div>
+                <div class="div7">0</div>
+                <div class="div8">0</div>
+                <div class="bni1">BNI</div>
+                <div class="button-contained-accent">
+                    <a href="https://www.bni.co.id/id-id/beranda/informasi-valas">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="maybank">
+                <div class="yes4">YES</div>
+                <div class="div5">0</div>
+                <div class="div6">0</div>
+                <div class="cimb-niaga">MAYBANK</div>
+                <div class="button-contained-accent">
+                  <a href="https://www.maybank.co.id/Business/forexrate">
+                    <div class="btn-bg"></div>
+                    <div class="view">view</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cimbniaga">
+                <div class="yes1">YES</div>
+                <div class="div5">0</div>
+                <div class="div6">0</div>
+                <div class="cimb-niaga">CIMB Niaga</div>
+                <div class="button-contained-accent">
+                    <a href="https://www.cimbniaga.co.id/id/personal/index">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="mufg">
+                <div class="div13">0</div>
+                <div class="yes4">YES</div>
+                <div class="div14">0</div>
+                <div class="cimb-niaga">MUFG</div>
+                <div class="button-contained-accent">
+                    <a href="https://www.mufg.co.id/charges/today-exchange-rates">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+              </div>
+              <div class="hsbc">
+                <div class="div15">0</div>
+                <div class="yes7">YES</div>
+                <div class="div16">0</div>
+                <div class="hsbc-indonesia">HSBC Indonesia</div>
+                <div class="button-contained-accent7">
+                    <a href="https://www.hsbc.co.id/1/2/id/personal/foreign-exchange/real-time-fx-rates">
+                        <div class="btn-bg"></div>
+                        <div class="view">view</div>
+                      </a>
+                </div>
+
+    		</div>
+    		<div class="sidebar">
+      			<div class="left-column-56px-row">
+        				<div class="bg1">
+        				</div>
+        				<div class="vert-sub-nav-row-56px">
+          					<div class="bg2">
+          					</div>
+          					<div class="sidebar-sub-menu">Refenitive</div>
+        				</div>
+        				<div class="vert-nav-row-active-56px">
+          					<div class="bg3">
+          					</div>
+          					<div class="bg2">
+          					</div>
+          					<div class="sidebar-menu-active">lct indonesia-jepang</div>
+        				</div>
+        				<div class="vert-nav-row-56px">
+          					<div class="bg3">
+          					</div>
+        				</div>
+        				<div class="vert-nav-row-active-56px1">
+          					<div class="bg3">
+          					</div>
+          					<div class="bg2">
+          					</div>
+          					<img class="cursor-icon" alt="" src="cursor.png">
+          					
+          					<div class="sidebar-menu-active">Sidebar menu active 02</div>
+        				</div>
+        				<div class="vert-nav-row-56px1">
+          					<div class="bg3">
+          					</div>
+          					<div class="sidebar-menu-01">Sidebar menu 01</div>
+        				</div>
+        				<div class="heading-leftcol">
+          					<div class="dev">
+          					</div>
+          					<div class="icon">
+            						<div class="rectangle">
+            						</div>
+            						<img class="pay-icon" alt="" src="Pay.svg">
+            						
+          					</div>
+          					<div class="sidebar-navigation-menu">Sidebar navigation menu</div>
+        				</div>
+      			</div>
+      			<div class="vert-nav-row-56px2">
+        				<div class="bg3">
+        				</div>
+        				<div class="sidebar-menu-01">export</div>
+      			</div>
+      			<div class="vert-sub-nav-row-56px1">
+        				<div class="bg2">
+        				</div>
+        				<div class="sidebar-sub-menu">Bank</div>
+      			</div>
+      			<div class="vert-sub-nav-row-56px2">
+        				<div class="bg2">
+        				</div>
+        				<div class="sidebar-sub-menu">Refenitive</div>
+      			</div>
+      			<div class="bg12">
+      			</div>
+      			<div class="vert-sub-nav-row-56px3">
+					<a href="/subpage_idrmy">
+						<div class="bg2">
+        				</div>
+        				<div class="sidebar-sub-menu">Bank</div>
+					</a>
+      			</div>
+      			<div class="vert-nav-row-active-56px1">
+        				<div class="bg3">
+        				</div>
+        				<div class="bg2">
+        				</div>
+        				<div class="sidebar-menu-active">LCT indonesia-malaysia</div>
+      			</div>
+      			<div class="vert-nav-row-56px3">
+        			<a href="/home">
+						<div class="bg3">
+        				</div>
+        				<div class="sidebar-menu-01">Home Page</div>
+					</a>	
+      			</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

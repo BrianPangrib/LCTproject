@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: -2.13%;
+    bottom: 0%;
+    left: 2.13%;
+    background-color: #fff;
+}
+.lct-track {
+    position: absolute;
+    height: 6.55%;
+    width: 74.06%;
+    top: 59.96%;
+    left: 15.04%;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+    display: inline-block;
+}
+.image-1-icon {
+    position: absolute;
+    height: 39.06%;
+    width: 69.18%;
+    top: 5.47%;
+    right: 13.28%;
+    bottom: 55.47%;
+    left: 17.54%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.btn-rect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #3c64b1;
+}
+.label {
+    position: absolute;
+    width: calc(100% - 36px);
+    top: calc(50% - 9px);
+    left: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+}
+.contained-default {
+    position: absolute;
+    height: 10.31%;
+    width: 38.08%;
+    top: 76.49%;
+    right: 28.87%;
+    bottom: 13.2%;
+    left: 33.05%;
+    font-size: 40px;
+    color: #fff;
+}
+.light-graphic-title-text {
+    position: absolute;
+    width: calc(100% - 723px);
+    top: 54px;
+    right: 67px;
+    left: 656px;
+    height: 970px;
+}
+.first-page {
+    width: 100%;
+    position: relative;
+    background-color: #5875ad;
+    height: 1024px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 90px;
+    color: #475f9a;
+    font-family: Mulish;
+}
+

@@ -1,0 +1,321 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.bg-icon {
+    position: absolute;
+    height: calc(100% - 1406px);
+    width: 100%;
+    top: 1406px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.bg-icon1 {
+    position: absolute;
+    height: calc(100% - 1340px);
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 1340px;
+    left: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.image-3-icon {
+    position: absolute;
+    top: 18px;
+    left: 22px;
+    width: 483px;
+    height: 102px;
+    object-fit: cover;
+}
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+.bg1 {
+    position: absolute;
+    height: 100%;
+    width: 95.65%;
+    top: 0%;
+    right: 2.17%;
+    bottom: 0%;
+    left: 2.17%;
+    background-color: #fbfbfb;
+}
+.sidebar-sub-menu {
+    position: absolute;
+    height: 42.86%;
+    width: 58.7%;
+    top: 28.57%;
+    left: 15.22%;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+.vert-sub-nav-row-56px {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 79.45%;
+    right: 0%;
+    bottom: 10.96%;
+    left: 0%;
+}
+.bg2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #fff;
+}
+.sidebar-menu-active {
+    position: absolute;
+    height: 28.57%;
+    width: 58.7%;
+    top: 35.71%;
+    left: 10.87%;
+    letter-spacing: 0.04em;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: linear-gradient(268.98deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)), #006be8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.vert-nav-row-active-56px {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 60.27%;
+    right: 0%;
+    bottom: 30.14%;
+    left: 0%;
+}
+.vert-nav-row-56px {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 50.68%;
+    right: 0%;
+    bottom: 39.73%;
+    left: 0%;
+}
+.cursor-icon {
+    position: absolute;
+    height: 39.29%;
+    width: 4.62%;
+    top: 44.64%;
+    right: 19.29%;
+    bottom: 16.07%;
+    left: 76.09%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.vert-nav-row-active-56px1 {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 21.92%;
+    right: 0%;
+    bottom: 68.49%;
+    left: 0%;
+}
+.sidebar-menu-01 {
+    position: absolute;
+    height: 42.86%;
+    width: 58.7%;
+    top: 28.57%;
+    left: 10.87%;
+    letter-spacing: 0.04em;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.vert-nav-row-56px1 {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 12.33%;
+    right: 0%;
+    bottom: 78.08%;
+    left: 0%;
+}
+.dev {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 368px;
+    height: 1px;
+}
+.rectangle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+}
+.pay-icon {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    right: 25%;
+    bottom: 25%;
+    left: 25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.icon {
+    position: absolute;
+    height: 71.11%;
+    width: 8.7%;
+    top: 0%;
+    right: 80.43%;
+    bottom: 28.89%;
+    left: 10.87%;
+}
+.sidebar-navigation-menu {
+    position: absolute;
+    height: 35.56%;
+    width: 65.22%;
+    top: 17.78%;
+    left: 26.09%;
+    letter-spacing: 0.04em;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.heading-leftcol {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 368px;
+    height: 45px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.left-column-56px-row {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 368px;
+    height: 584px;
+}
+.vert-nav-row-56px2 {
+    position: absolute;
+    top: 520px;
+    left: 0px;
+    width: 368px;
+    height: 56px;
+}
+.vert-sub-nav-row-56px1 {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 69.86%;
+    right: 0%;
+    bottom: 20.55%;
+    left: 0%;
+}
+.vert-sub-nav-row-56px2 {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 41.1%;
+    right: 0%;
+    bottom: 49.32%;
+    left: 0%;
+}
+.bg11 {
+    position: absolute;
+    height: 9.59%;
+    width: 95.65%;
+    top: 0%;
+    right: 2.17%;
+    bottom: 90.41%;
+    left: 2.17%;
+    background-color: #fbfbfb;
+}
+.vert-sub-nav-row-56px3 {
+    position: absolute;
+    height: 9.59%;
+    width: 100%;
+    top: 31.51%;
+    right: 0%;
+    bottom: 58.9%;
+    left: 0%;
+}
+.vert-nav-row-56px3 {
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    width: 368px;
+    height: 56px;
+}
+.sidebar {
+    position: absolute;
+    top: 213px;
+    left: 22px;
+    width: 368px;
+    height: 584px;
+}
+.desktop-footer-v1-icon {
+    position: absolute;
+    top: 1104px;
+    left: 0px;
+    width: 1576px;
+    height: 302px;
+    object-fit: cover;
+}
+.bg16 {
+    position: absolute;
+    top: 213px;
+    left: 443px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    width: 1088px;
+    height: 751px;
+}
+.home-page {
+    width: 100%;
+    position: relative;
+    background-color: #fafafa;
+    height: 1486px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.64);
+    font-family: Roboto;
+}
+
