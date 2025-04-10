@@ -147,4 +147,7 @@ Setelah itu matikan virtual environtment dengan menggunakan command
 deactivate
 ```
 
-###  Program sudah selesai
+##  Program sudah selesai dijalankan dan link video penjelasan
+Link video penjelasan bisa diakses melalui : 
+
+### LCT PROJECT SUDAH SELESAI
