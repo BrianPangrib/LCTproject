@@ -78,6 +78,7 @@ Setelah terminal terbuka, kamu bisa langsung mengetik perintah seperti:
 
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
+```
 
 ##  Membuat Virtual Environment & Instalasi Library
 
@@ -91,6 +92,7 @@ Jalankan perintah berikut di terminal:
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ##  Menjalankan Script Scraping Data
 
@@ -112,10 +114,11 @@ Contoh baris kode di dalam file `export.py`:
 # Path untuk file Excel Mandiri
 MANDIRI_EXCEL_PATH = r"Z:\kerjaan magang\LCT_MANDIRI.xlsx"
 MANDIRI_EXCEL_PATH = r"C:\Users\NamaUser\Documents\LCT_MANDIRI.xlsx"
-
+```
 ###  Jalankan perintah berikut di terminal dan pastikan direktori code kalian sudah sesuai:
 
 ```powershell
 python -u "Z:\kerjaan magang\LCTproject\export.py"
 python -u "Z:\kerjaan magang\LCTproject\exportdata.py"
 python -u "Z:\kerjaan magang\LCTproject\exportdatalast.py"
+```
