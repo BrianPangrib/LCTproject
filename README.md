@@ -17,6 +17,6 @@
 **Membuka Visual Studio Code:**
 
    Setelah instalasi selesai, buka aplikasi Visual Studio Code. Jika berhasil, tampilan awalnya akan serupa dengan gambar berikut:  
-   *![tampilan visual studio code](static\aset\image.png)*
+   *![tampilan visual studio code](static/aset/image.png)*
 
 
