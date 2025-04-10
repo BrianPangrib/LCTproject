@@ -78,3 +78,44 @@ Setelah terminal terbuka, kamu bisa langsung mengetik perintah seperti:
 
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
+
+##  Membuat Virtual Environment & Instalasi Library
+
+Setelah terminal PowerShell terbuka dan kebijakan eksekusi diatur, langkah berikutnya adalah membuat virtual environment dan menginstal semua dependensi yang dibutuhkan proyek ini.
+
+### 1. Buat Virtual Environment
+
+Jalankan perintah berikut di terminal:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+
+##  Menjalankan Script Scraping Data
+
+Setelah semua library berhasil diinstal, langkah berikutnya adalah menjalankan script untuk melakukan scraping data dari masing-masing bank.
+
+Script yang perlu dijalankan adalah:
+
+- `export.py`
+- `exportdata.py`
+- `exportdatalast.py`
+
+## Sebelum menjalankan perintah pastikan code direktori excel yang akan kalian tuju sudah sesuai
+
+Sebelum menjalankan script scraping, pastikan bahwa **path direktori untuk menyimpan file Excel sudah disesuaikan** dengan lokasi di komputer kalian.
+
+Contoh baris kode di dalam file `export.py`:
+
+```python
+# Path untuk file Excel Mandiri
+MANDIRI_EXCEL_PATH = r"Z:\kerjaan magang\LCT_MANDIRI.xlsx"
+MANDIRI_EXCEL_PATH = r"C:\Users\NamaUser\Documents\LCT_MANDIRI.xlsx"
+
+###  Jalankan perintah berikut di terminal dan pastikan direktori code kalian sudah sesuai:
+
+```powershell
+python -u "Z:\kerjaan magang\LCTproject\export.py"
+python -u "Z:\kerjaan magang\LCTproject\exportdata.py"
+python -u "Z:\kerjaan magang\LCTproject\exportdatalast.py"
