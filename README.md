@@ -133,12 +133,12 @@ jika berhasil maka akan muncul seperti ini
 
 ![Tampilan Terminal Berhasil](![alt text](static/aset/flask.png))
 
-## Setelah menjalankan program buka lokalhost (http://localhost:5000/) pada chrome atau sejenisnya
+## Setelah menjalankan program buka localhost (http://localhost:5000/) pada chrome atau sejenisnya
 Jika berhasil maka tampilannya jadi seperti ini:
 
 ![Tampilan Localhost berhasil](![alt text](static/aset/localhost.png))
 
-## Untuk memberhentikan flask dan local host
+## Untuk memberhentikan flask dan localhost
 Cara memberhentikan flask pada app.py adalah dengan cara kembali ke terminal dan menekan `ctrl+c`
 
 Setelah itu matikan virtual environtment dengan menggunakan command
@@ -148,6 +148,6 @@ deactivate
 ```
 
 ##  Program sudah selesai dijalankan dan link video penjelasan
-Link video penjelasan bisa diakses melalui : 
+Link video penjelasan bisa diakses melalui : https://youtu.be/QtX3AZ8ZVLE
 
 ### LCT PROJECT SUDAH SELESAI
