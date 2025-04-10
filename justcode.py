@@ -97,7 +97,25 @@ def scrape_bca():
 
 # Function to scrape exchange rate from BNI
 def scrape_bni():
-    url = "https://www.bni.co.id/id-id/beranda/informasi-valas"
+    url = "https://www.bni.co.id/id-id/beranda/informasi-valass"
+
+    headers = {
+        "Accept": "*/*",
+        "Accept-encoding": "gzip, deflate, br, zstd",
+        "Accept-language": "en-US,en;q=0.9",
+        "Content-length": "0",
+        "Content-type": "text/plain",
+        "Cookie": "ar_debug=1",
+        "Origin": "https://www.bni.co.id",
+        "Priority": "u=1, i",
+        "Referer": "https://www.bni.co.id/",
+        "Sec-fetch-dest": "empty",
+        "Sec-fetch-mode": "cors",
+        "Sec-fetch-site": "cross-site",
+        "Sec-fetch-storage-access": "active",
+        "User-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
+    }
+
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -167,6 +185,7 @@ def scrape_cimb():
 
         # Cari elemen <td> untuk MYR
         myr_cell = soup.find(lambda tag: tag.name == 'td' and 'MYR' in tag.get_text())
+        print (myr_cell)
 
 
         if not myr_cell:

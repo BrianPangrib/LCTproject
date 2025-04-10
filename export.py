@@ -24,31 +24,42 @@ BNI_TABLE_MAPPING = {
 def scrape_bni_tables():
     """Scrape ketiga tabel dari halaman BNI dan kembalikan sebagai dictionary DataFrames."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.bni.co.id/"
     }
 
-    response = requests.get(BNI_URL, headers=headers)
-    response.raise_for_status()
+    try:
+        response = requests.get(BNI_URL, headers=headers, timeout=10)
+        
+        if response.status_code != 200:
+            print(f"❌ Gagal mengakses {BNI_URL}. Status Code: {response.status_code}")
+            return {}
+        
+        soup = BeautifulSoup(response.text, "html.parser")
+        tables_data = {}
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    tables_data = {}
+        for table_name, span_id in BNI_TABLE_MAPPING.items():
+            span_element = soup.find("span", id=span_id)
+            if not span_element:
+                print(f"⚠️ Elemen {span_id} tidak ditemukan di halaman.")
+                continue
 
-    for table_name, span_id in BNI_TABLE_MAPPING.items():
-        # Cari elemen <span> berdasarkan ID untuk mendapatkan judul tabel
-        span_element = soup.find("span", id=span_id)
+            table_element = span_element.find_next("table", class_="table table-striped angrid-grid table_info_counter")
+            if table_element:
+                table_io = StringIO(str(table_element))
+                df = pd.read_html(table_io)[0]
+                df["Tanggal Scraping"] = pd.Timestamp.now()
+                tables_data[table_name] = df
+            else:
+                print(f"⚠️ Tabel '{table_name}' tidak ditemukan!")
 
-        # Temukan tabel yang berdekatan
-        table_element = span_element.find_next("table", class_="table table-striped angrid-grid table_info_counter")
+        return tables_data
+    
+    except requests.RequestException as e:
+        print(f"❌ Terjadi kesalahan saat mengakses {BNI_URL}: {e}")
+        return {}
 
-        if table_element:
-            table_io = StringIO(str(table_element))
-            df = pd.read_html(table_io)[0]
-            df["Tanggal Scraping"] = pd.Timestamp.now()  # Tambahkan kolom timestamp
-            tables_data[table_name] = df
-        else:
-            print(f"Tabel '{table_name}' tidak ditemukan!")
-
-    return tables_data
 
 def save_to_excel(tables_data, file_path):
     """Simpan data dari semua tabel ke file Excel, memperbarui data jika sudah ada."""
