@@ -122,3 +122,29 @@ python -u "Z:\kerjaan magang\LCTproject\export.py"
 python -u "Z:\kerjaan magang\LCTproject\exportdata.py"
 python -u "Z:\kerjaan magang\LCTproject\exportdatalast.py"
 ```
+
+## Menjalankan app.py (flask) untuk menampilkan pada localhost
+Sebelum menjalankan script flask, pastikan bahwa command sudah sesuai dengan lokasi file code anda. Setelah sesuai maka jalankan file.
+
+```powershell
+python -u "z:\kerjaan magang\LCTproject\app.py"
+```
+jika berhasil maka akan muncul seperti ini
+
+![Tampilan Terminal Berhasil](![alt text](static/aset/flask.png))
+
+## Setelah menjalankan program buka lokalhost (http://localhost:5000/) pada chrome atau sejenisnya
+Jika berhasil maka tampilannya jadi seperti ini:
+
+![Tampilan Localhost berhasil](![alt text](static/aset/localhost.png))
+
+## Untuk memberhentikan flask dan local host
+Cara memberhentikan flask pada app.py adalah dengan cara kembali ke terminal dan menekan `ctrl+c`
+
+Setelah itu matikan virtual environtment dengan menggunakan command
+
+```powershell
+deactivate
+```
+
+###  Program sudah selesai
