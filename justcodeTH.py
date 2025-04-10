@@ -73,6 +73,36 @@ def scrape_briTH():
         print(f"Terjadi kesalahan: {e}")
         return None
 
+# Function to scrape exchange rate from BCA
+def scrape_bcaTH():
+    url = "https://www.bca.co.id/id/informasi/kurs"
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        table = soup.find('table')
+
+        if not table:
+            return None
+
+        for row in table.find_all('tr'):
+            cells = row.find_all('td')
+            if len(cells) > 0 and 'THB' in cells[0].text:
+                nilai_beli = float(cells[3].text.strip().replace('.', '').replace(',', '.'))
+                nilai_jual = float(cells[4].text.strip().replace('.', '').replace(',', '.'))
+                rata_rata = (nilai_beli + nilai_jual) / 2
+                return "{:,.2f}".format(rata_rata).replace(",", "X").replace(".", ",").replace("X", ".")
+    except:
+        return None
+
+
+
+
+
+
+
 # Running each function separately
 print(f"Mandiri: {scrape_mandiriTH() or 'NONE'}")
 print(f"BRI: {scrape_briTH() or 'NONE'}")
+print(f"BCA: {scrape_bcaTH() or 'NONE'}")
+
