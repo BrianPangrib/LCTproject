@@ -4,6 +4,16 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import os
 
+# LIST BANK :
+# BNI
+# MANDIRI
+# BRI
+# BCA
+# MAYBANK
+# CIMB NIAGA (TIDAK BISA)
+# MUFG
+# HSBC
+
 # ==========================
 # 🔵 BNI SETUP
 # ==========================

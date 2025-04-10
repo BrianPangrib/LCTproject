@@ -4,6 +4,15 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import os
 
+
+# LIST BANK PADA CODE INI:
+# ICBC
+# BOC
+# CCB
+# OCBC
+# SINARMAS
+# DBS
+
 # ==========================
 # 🟢 ICBC BANK SETUP
 # ==========================

@@ -4,6 +4,13 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import os
 
+
+# LIST BANK PADA CODE INI :
+# PERMATA
+# DANAMON
+# MIZUHO (TIDAK ADA PADA WEBSITE BANK RESMINYA)
+# BTPN
+
 # ==========================
 # 🟢 PERMATA BANK SETUP
 # ==========================

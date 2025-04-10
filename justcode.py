@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Function to scrape exchange rate from Mandiri
+# def scrape_mandiri(flag):
 def scrape_mandiri():
     url = "https://www.bankmandiri.co.id/kurs"
     try:
@@ -17,6 +18,7 @@ def scrape_mandiri():
 
         for row in table.find_all('tr'):
             cells = row.find_all('td')
+            # if len(cells) > 0 and 'flag' in cells[0].text:
             if len(cells) > 0 and 'MYR' in cells[0].text:
                 nilai_beli = float(cells[3].text.strip().replace('.', '').replace(',', '.'))
                 nilai_jual = float(cells[4].text.strip().replace('.', '').replace(',', '.'))
@@ -274,9 +276,10 @@ def scrape_hsbc():
     except:
         return None   
 
+# get_exchange_rates(flag)
 def get_exchange_rates():
     return {
-        "Mandiri": scrape_mandiri() or 'NONE',
+        "Mandiri": scrape_mandiri() or 'NONE', #scrape_mandiri(flag) or 'NONE
         "BRI": scrape_bri() or 'NONE',
         "BCA": scrape_bca() or 'NONE',
         "BNI": scrape_bni() or 'NONE',

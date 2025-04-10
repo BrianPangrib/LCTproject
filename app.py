@@ -6,7 +6,15 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     exchange_rates = get_exchange_rates()
+    # get_exchange_rates("myr") buat diatas
     return render_template('subpage_idrmy.html', exchange_rates=exchange_rates)
+
+@app.route('/cny')
+def subpage_idrth():
+    exchange_rates = get_exchange_rates()
+    # get_exchange_rates("thb")
+    return render_template('subpage_idth.html', exchange_rates=exchange_rates) #tambahkan read data excel
+
 
 @app.route('/home')
 def home_page():
@@ -14,6 +22,14 @@ def home_page():
 
 @app.route('/subpage_idrmy')
 def subpage_idrmy():
+# panggil excel (sesuai sheets)
+# assign data excel ke variabel (list) (contoh : data excel cny = pandas.read_excel(sheet_name=cny))
+# assign data excel ke variabel (list) (contoh : data excel myr = pandas.read_excel(sheet_name=myr))
+# assign data excel ke variabel (list) (contoh : data excel jpy = pandas.read_excel(sheet_name=jpy))
+# assign data excel ke variabel (list) (contoh : data excel thb = pandas.read_excel(sheet_name=thb))
+# panggil index terakhir dari list tersebut (data terakhir excel A = data excel A [len(data excel A)-1])
+
+
     return render_template('subpage_idrmy.html')
 
 @app.route('/subpage_refenitive')
