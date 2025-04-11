@@ -148,6 +148,6 @@ deactivate
 ```
 
 ##  Program sudah selesai dijalankan dan link video penjelasan
-Link video penjelasan bisa diakses melalui : https://youtu.be/QtX3AZ8ZVLE
+Link video penjelasan bisa diakses melalui : https://youtu.be/YKLgN6iWAzY
 
 ### LCT PROJECT SUDAH SELESAI
